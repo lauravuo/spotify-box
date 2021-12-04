@@ -40,8 +40,3 @@ exports.getTopTracks = async function getTopTracks() {
   return resp.json()
 }
 
-// ;(async () => {
-//   const resp = await getTopTracks()
-//   const data = await resp.json()
-//   console.log(data)
-// })()
