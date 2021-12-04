@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 const { stringify } = require('querystring')
 const fetch = require('node-fetch')
 
