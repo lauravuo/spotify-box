@@ -11,7 +11,7 @@ async function main() {
     url: item.external_urls.spotify,
     image: item.album.images[1].url
   } ))
-  const md = "My top tracks, updated on " + new Date.toLocaleString()
+  const md = "My top tracks, updated on " + new Date().toLocaleString()
   const mdWithData = data.reduce(
     (result, item) =>
       result+ `\n\n## [${item.artist}: ${item.name}](${item.url})\n![${item.artist}!](${item.image})`, md)
