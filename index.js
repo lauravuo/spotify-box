@@ -4,7 +4,7 @@ const { getTopTracks } = require('./spotify')
 
 async function main() {
   const tracksJson = await getTopTracks()
-  fs.writeFileSync(JSON.stringify(tracksJson), './tracks.json')
+  fs.writeFileSync('./tracks.json', JSON.stringify(tracksJson))
 }
 
 ;(async () => {
